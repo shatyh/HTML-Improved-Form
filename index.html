@@ -20,7 +20,10 @@
                 <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35" required>
                 <label for="age">Your Age</label>
                 <input type="number" name="age" id="age" min="21" max="120">
+                <label for="pwd">Your Secret Code: (must be 6 alphanumeric characters) <span class="required-field">*</span> </label>
+                <input type="password" id="pwd" name="pwd" pattern="[0-9a-zA-Z]{6}" title="6 Alphanumeric Character Passcode" required>
                 <h5>Must be 21 or older to enter</h5>
+            
 
 
             </div>
@@ -91,7 +94,7 @@
                         <option value="WY">Wyoming</option>
                     </datalist>
                     <label for="zip">Your Zipcode</label>
-                    <input type="number" id="zip" name="zip">
+                    <input type="text" id="zip" name="zip" pattern="[0-9]{5}">
                 </div>
             </fieldset>
 
@@ -146,3 +149,7 @@
     </footer>
 </body>
 </html>
+
+
+
+
